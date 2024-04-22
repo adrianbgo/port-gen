@@ -1,4 +1,3 @@
 #!/usr/bin/env sh
-npm test
-npx lint-staged
 npm run test:badges
+npx lint-staged
