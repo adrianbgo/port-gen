@@ -1,0 +1,94 @@
+{
+  "basics": {
+    "name": "Adrian Bauer",
+    "label": "Lead Software Engineer",
+    "picture": "https://avatars.githubusercontent.com/u/72395744?v=4",
+    "email": "adrianbgo@hotmail.com",
+    "phone": "4197069510",
+    "website": "adrianbgo.github.io",
+    "summary": "A lead software engineer with a passion for responsive and accessible web design and development.",
+    "location": {
+      "address": "9957 Darrow Park Drive Apt 223",
+      "postalCode": "44087",
+      "city": "Twinsburg",
+      "countryCode": "US",
+      "region": "Ohio"
+    },
+    "profiles": [
+      {
+        "network": "Github",
+        "username": "adrianbgo",
+        "url": "https://github.com/adrianbgo"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "adrianbbauer",
+        "url": "https://linkedin.com/in/adrianbbauer"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Cue Audio",
+      "position": "Lead Platform Engineer",
+      "website": "https://connectwithcue.com",
+      "startDate": "2022-11",
+      "summary": "Lead an international team of developers in the creation of audio-responsive applications. ",
+      "highlights": [
+        "Implemented responsive design to a wide variety of mobile applications",
+        "Added performant enhancements to Websocket-based web apps",
+        "Mentored and taught junior developers"
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Fisher Titus Medical Center",
+      "position": "Software Engineer"
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Rochester",
+      "area": "Computational Neurobiology",
+      "studyType": "Bachelors",
+      "startDate": "2014-08",
+      "endDate": "2019-05",
+      "gpa": "3.85/4.0"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Javascript",
+      "level": "Expert",
+      "keywords": ["Javascript"]
+    },
+    {
+      "name": "HTML",
+      "level": "Expert",
+      "keywords": ["HTML"]
+    },
+    {
+      "name": "Typescript",
+      "level": "Expert",
+      "keywords": ["Typescript"]
+    },
+    {
+      "name": "Material Design",
+      "level": "Expert",
+      "keywords": ["Material", "UI/UX Design"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Fluent"
+    }
+  ],
+  "projects": [],
+  "meta": {
+    "canonical": "https://raw.githubusercontent.com/adrianbgo/port-gen/master/adrian-bauer.resume.json",
+    "version": "v1.0.0",
+    "lastModified": "2024-4-22T09:52:00"
+  }
+}
