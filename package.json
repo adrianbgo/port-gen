@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "next lint",
     "prepare": "husky",
-    "test": "jest"
+    "test": "jest",
+    "test:coverage": "npm test -- --coverage",
+    "test:badges": "npm run test:coverage && jest-coverage-badges --output ./badges"
   },
   "dependencies": {
     "@blueprintjs/core": "^5.10.2",
