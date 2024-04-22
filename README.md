@@ -20,6 +20,17 @@ Ensure a resume.json or \*.resume.json file exists in the root of this repositor
 
 run `npm run dev` to start the local app.
 
+## Roadmap
+
+### v1.0.0
+
+- [ ] Generate a site from just a resume.json file
+- [ ] Create a basic resume.json builder
+
+### v2.0.0
+
+- [ ] Allow for upload of existing resume pdf to convert to resume.json
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
