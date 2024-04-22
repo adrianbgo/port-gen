@@ -16,6 +16,13 @@ describe("Basics Component", () => {
     expect(component).toBeInTheDocument();
   });
 
+  it("renders no component if unavailable", () => {
+    render(<Basics />);
+    const component = screen.queryAllByTestId("basics-component");
+
+    expect(component).not.toHaveLength;
+  });
+
   it("renders an image when available", () => {
     render(<Basics basics={TestPositiveResume.basics} />);
 
