@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Basics from "./(components)/Basics";
+import Basics from "./(components)/(sections)/Basics";
 import { readFileSync } from "fs";
 import { ResumeSchema } from "@kurone-kito/jsonresume-types";
 

@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import Basics from ".";
+import { TestPositiveResume } from "@/app/(utils)/testObjects";
 
 const meta = {
   title: "Sections/Basics",
@@ -14,5 +15,5 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const BasicsStory: Story = {
-  args: {},
+  args: { basics: TestPositiveResume.basics },
 };
