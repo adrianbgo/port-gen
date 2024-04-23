@@ -24,13 +24,11 @@ describe("Work Component", () => {
     expect(component).not.toHaveLength;
   });
 
-  // it("renders all former employers", () => {
-  //   render(<Work work={TestNegativeResume.work} />);
+  it("shows as a timeline", () => {
+    render(<Work work={TestPositiveResume.work} />);
 
-  //   const list = screen.getByTestId("employer-list");
+    const timeline = screen.getByTestId("timeline-component");
 
-  //   expect(list.childNodes).toHaveLength;
-  // });
-
-  // it("shows as a timeline", () => {});
+    expect(timeline).toBeInTheDocument();
+  });
 });

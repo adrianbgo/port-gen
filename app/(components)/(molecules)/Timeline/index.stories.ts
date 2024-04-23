@@ -1,5 +1,6 @@
 import { Meta, StoryObj } from "@storybook/react";
 import Timeline from ".";
+import { TestPositiveResume } from "@/app/(utils)/testObjects";
 
 const meta = {
   title: "Molecules/Timeline",
@@ -14,5 +15,5 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const TimelineStory: Story = {
-  args: {},
+  args: { employers: TestPositiveResume.work },
 };

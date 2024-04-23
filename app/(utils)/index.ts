@@ -1,1 +1,2 @@
-export { TestResume } from "./testObjects";
+export { convertDate } from "./convertDate";
+export { TestNegativeResume, TestPositiveResume } from "./testObjects";
