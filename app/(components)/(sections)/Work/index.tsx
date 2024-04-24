@@ -4,13 +4,15 @@ import Timeline from "../../(molecules)/Timeline";
 import styles from "./index.module.css";
 
 const Work = (data: ResumeSchema, includeVolunteer: boolean = false) => {
-  return data.work && data.work.length ? (
+  return (data.work && data.work.length) ||
+    /* c8 ignore start */
+    (data.volunteer && data.volunteer.length) ? (
     <div data-testid="work-component" className={styles.workComponent}>
       <Timeline
-        employers={
-          includeVolunteer && data.volunteer && data.volunteer.length
-            ? data.work.concat(data.volunteer)
-            : data.work
+        /* c8 ignore end */
+        employers={data.work && data.work.length ? data.work : undefined}
+        volunteer={
+          data.volunteer && data.volunteer.length ? data.volunteer : undefined
         }
       />
     </div>
