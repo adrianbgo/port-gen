@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div>
       <Basics basics={resume.basics} />
-      <Work work={resume.work} />
+      <Work work={resume.work} volunteer={resume.volunteer} />
     </div>
   );
 }

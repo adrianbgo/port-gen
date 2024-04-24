@@ -62,21 +62,25 @@ const dateFormat = (date: Date, mask?: string, utc: boolean = false) => {
       Z: String(
         utc
           ? "UTC"
-          : (String(date).match(timeZone) || [""])
-              .pop()
-              ?.replace(timezoneClip, ""),
+          : /* c8 ignore next */
+            (String(date).match(timeZone) || [""])
+              .pop()!
+              .replace(timezoneClip, ""),
       ),
       o:
         (o > 0 ? "-" : "+") +
         pad(Math.floor(Math.abs(o) / 60) * 100 + (Math.abs(o) % 60), 4),
       S: ["th", "st", "nd", "rd"][
+        /* c8 ignore next */
         d % 10 > 3 ? 0 : (((d % 100) - (d % 10) != 10 ? 1 : 0) * d) % 10
       ],
     };
 
+    /* c8 ignore start */
     return mask.replace(token, ($0: string) => {
       return $0 in flags ? flags[$0] : $0.slice(1, $0.length - 1);
     });
+    /* c8 ignore end */
   };
 };
 

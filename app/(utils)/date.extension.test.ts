@@ -18,13 +18,14 @@ describe("Date extension utility", () => {
     expect(testDate.format("mmm yyyy", true)).toStrictEqual("Jan 2021");
   });
   it("handles all flags", () => {
-    const testDate = new Date("2021-01-01");
+    const testDate = new Date("2021-01-24 02:00:00:500 -05:00");
     expect(
       testDate.format(
         "d dd ddd dddd m mm mmm mmmm yy yyyy h hh H HH M MM s ss l L t tt T TT Z o S",
+        false,
       ),
     ).toStrictEqual(
-      "31 31 Thu Thursday 12 12 Dec December 20 2020 7 07 19 19 0 00 0 00 000 00 p pm P PM EST -0500 st",
+      "24 24 Sun Sunday 1 01 Jan January 21 2021 2 02 2 02 0 00 0 00 500 50 a am A AM EST -0500 th",
     );
   });
 });

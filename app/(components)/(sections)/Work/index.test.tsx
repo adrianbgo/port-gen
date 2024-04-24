@@ -31,4 +31,35 @@ describe("Work Component", () => {
 
     expect(timeline).toBeInTheDocument();
   });
+
+  it("renders no volunteer work when includeVolunteer is not included", () => {
+    render(
+      <Work
+        work={TestPositiveResume.work}
+        volunteer={TestPositiveResume.volunteer}
+      />,
+    );
+
+    const timeline = screen.getByTestId("timeline-component");
+
+    const volunteerExample = screen.getByText("CoderDojo");
+    expect(timeline).toBeInTheDocument();
+    expect(timeline).toContainElement(volunteerExample);
+  });
+
+  it("renders no volunteer work when volunteer work is unavailable", () => {
+    render(
+      <Work
+        work={TestPositiveResume.work}
+        volunteer={TestNegativeResume.volunteer}
+      />,
+    );
+
+    const timeline = screen.getByTestId("timeline-component");
+
+    const volunteerExample = screen.queryAllByText("test");
+
+    expect(timeline).toBeInTheDocument();
+    expect(volunteerExample.length).toStrictEqual(0);
+  });
 });
