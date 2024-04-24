@@ -2,7 +2,6 @@ import React from "react";
 import styles from "./index.module.css";
 import { ResumeSchema } from "@kurone-kito/jsonresume-types";
 import Employer from "../Employer";
-import { convertDate } from "@/app/(utils)";
 
 interface ITimeline {
   employers: ResumeSchema["work"];
